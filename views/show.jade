@@ -1,0 +1,17 @@
+doctype html 5
+html(lang='en')
+	head
+		title Status Updation
+		link(rel='stylesheet', href='css/styles.css')
+	body
+		script(src='js/src/react.js')
+		script(src='js/src/JSXTransformer.js')
+		script(src='https://www.google.com/jsapi')
+		div#statusholder
+		script.
+			var dataTab=JSON.parse('!{dataForTable}')
+		script.
+			google.load("visualization","1",{packages:["corechart"]})
+			google.setOnLoadCallback(drawChart)
+			function drawChart(){}
+		script(type="text/jsx",src="js/status.js")

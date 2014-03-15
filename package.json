@@ -1,0 +1,18 @@
+{
+  "name": "status",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Azuqua <raji@azuqua.com>",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "~3.4.7",
+    "common": "git+ssh://git@github.com:azuqua/common.git#master",
+    "jade": "~1.1.0",
+    "node-yaml-config": "0.0.2",
+    "async": "*",
+    "azure": "~0.7.16",
+    "request":"*"
+  }
+}
